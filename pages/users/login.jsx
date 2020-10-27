@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import { UserContext } from "../../contexts/User";
 import fetch from "isomorphic-unfetch";
+import Link from "next/link";
 import jwt from "jsonwebtoken";
 
 const login = () => {
@@ -53,6 +54,9 @@ const login = () => {
         <label>password</label>
         <input type="password" name="password" onChange={inputHanlder} />
         <button type="submit">Login</button>
+        <Link href="/users/register">
+          <a>register</a>
+        </Link>
       </form>
     </div>
   );
