@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-container {
+  width: 100vw;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #73dbb3;
+}
+
+.nav-container nav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container nav a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .content h1 {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.container .mid {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .mid h1 {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.container .note-form {
+  margin-top: 2rem;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .note-form label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .note-form input {
+  padding: 1rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.container .note-form textarea {
+  padding: 1rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.container .note-form button {
+  padding: 1rem 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: #3ab362;
+  color: whitesmoke;
+}
+
+.container .note-form button:hover {
+  background-color: #2f9941;
+  cursor: pointer;
+}
+
+.container .note-container {
+  padding: 1rem 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .note-container .note {
+  margin-top: 1rem;
+  width: 50%;
+  height: 50vh;
+  max-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .note-container .note .controllers {
+  width: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .note-container .note .controllers button {
+  width: 45%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  background-color: #b33a3a;
+  color: whitesmoke;
+}
+
+.container .note-container .note .controllers button:hover {
+  background-color: #992f2f;
+  cursor: pointer;
+}
+
+.container .note-container .note .controllers .edit {
+  width: 45%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  background-color: #3ab362;
+  color: whitesmoke;
+}
+
+.container .note-container .note .controllers .edit:hover {
+  background-color: #2f9960;
+  cursor: pointer;
+}
+
+.container .notes-container {
+  padding: 1rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.container .notes-container .note {
+  margin-top: 3rem;
+  margin-right: 2rem;
+  width: 30%;
+  height: 15vh;
+  max-height: 20vh;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 7px rgba(117, 117, 117, 0.493);
+          box-shadow: 0px 2px 7px rgba(117, 117, 117, 0.493);
+}
+
+.container .notes-container .note:hover {
+  -webkit-box-shadow: 0px 2px 7px #757575;
+          box-shadow: 0px 2px 7px #757575;
+  cursor: pointer;
+}
+
+.container .notes-container .note button {
+  width: 50%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.7rem;
+  background-color: #3ab372;
+  color: whitesmoke;
+}
+
+.container .notes-container .note button:hover {
+  background-color: #2f9961;
+  cursor: pointer;
+}
+/*# sourceMappingURL=note.css.map */

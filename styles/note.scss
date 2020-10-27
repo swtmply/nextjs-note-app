@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-container {
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(115, 219, 179);
+
+  nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+
+  .mid {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin-top: 2rem;
+      width: 50%;
+    }
+  }
+
+  .note-form {
+    margin-top: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      padding: 1rem 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    textarea {
+      padding: 1rem 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      align-self: flex-end;
+      width: 30%;
+      border: none;
+      outline: none;
+      background-color: rgb(58, 179, 98);
+      color: whitesmoke;
+
+      &:hover {
+        background-color: rgb(47, 153, 65);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .note-container {
+    padding: 1rem 0;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .note {
+      margin-top: 1rem;
+      width: 50%;
+      height: 50vh;
+      max-height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .controllers {
+        width: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+          width: 45%;
+          border: none;
+          outline: none;
+          padding: 0.5rem 0.7rem;
+          background-color: rgb(179, 58, 58);
+
+          color: whitesmoke;
+
+          &:hover {
+            background-color: rgb(153, 47, 47);
+            cursor: pointer;
+          }
+        }
+        .edit {
+          width: 45%;
+          border: none;
+          outline: none;
+          padding: 0.5rem 0.7rem;
+          background-color: rgb(58, 179, 98);
+
+          color: whitesmoke;
+
+          &:hover {
+            background-color: rgb(47, 153, 96);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .notes-container {
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+    .note {
+      margin-top: 3rem;
+      margin-right: 2rem;
+      width: 30%;
+      height: 15vh;
+      max-height: 20vh;
+      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 0px 2px 7px rgba(117, 117, 117, 0.493);
+
+      &:hover {
+        box-shadow: 0px 2px 7px rgb(117, 117, 117);
+        cursor: pointer;
+      }
+
+      button {
+        width: 50%;
+        border: none;
+        outline: none;
+        padding: 0.5rem 0.7rem;
+        background-color: rgb(58, 179, 114);
+
+        color: whitesmoke;
+
+        &:hover {
+          background-color: rgb(47, 153, 97);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
