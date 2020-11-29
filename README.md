@@ -34,6 +34,4 @@ By typing
     npm run dev
 ```
 
-You will need to go to ![http://localhost:3000] to start the application
-
-### Thanks
+You will need to go to [http://localhost:3000](http://localhost:3000) to start the application
